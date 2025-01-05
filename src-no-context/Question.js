@@ -1,8 +1,6 @@
 import Answer from "./Answer";
-import { useQuiz } from "./context/QuizContext";
 
-function Question() {
-  const { questions, index, answer, dispatch } = useQuiz();
+function Question({ questions, index, answer, dispatch }) {
   const currentQue = questions.at(index);
   return (
     <div>
